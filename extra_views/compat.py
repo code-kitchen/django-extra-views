@@ -17,7 +17,7 @@ except ImportError:
         
 try:
     from django.utils.functional import curry
-except ImportError
+except ImportError:
      from functools import partial
     
      def curry(func, *a, **kw):
