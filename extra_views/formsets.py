@@ -6,8 +6,7 @@ from django.forms.models import modelformset_factory, inlineformset_factory
 from django.views.generic.detail import SingleObjectMixin, SingleObjectTemplateResponseMixin
 from django.views.generic.list import MultipleObjectMixin, MultipleObjectTemplateResponseMixin
 from django.forms.models import BaseInlineFormSet
-from django.utils.functional import curry
-from .compat import ContextMixin
+from .compat import ContextMixin, curry
 
 
 class BaseFormSetMixin(object):
