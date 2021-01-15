@@ -13,3 +13,12 @@ except ImportError:
             if 'view' not in kwargs:
                 kwargs['view'] = self
             return kwargs
+
+        
+try:
+    from django.utils.functional import curry
+except ImportError
+     from functools import partial
+    
+     def curry(func, *a, **kw):
+        return partial(func, *a, **kw)
